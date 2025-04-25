@@ -1,0 +1,38 @@
+{
+  "name": "ai-resume-evaluator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth/core": "^0.34.2",
+    "@headlessui/react": "^2.2.2",
+    "@heroicons/react": "^2.2.0",
+    "axios": "^1.8.4",
+    "framer-motion": "^12.7.4",
+    "lucide-react": "^0.501.0",
+    "next": "15.2.2",
+    "next-auth": "^4.24.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-dropzone": "^14.3.8",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
