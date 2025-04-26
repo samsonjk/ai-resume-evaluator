@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const response = await fetch(`${process.env.BASE_URL}/user/resume/list?userid=${userId}`);
+    const response = await fetch(`${process.env.BASE_API_URL}/user/resume/list?userid=${userId}`);
 
     if (!response.ok) {
       throw new Error(`Python API error: ${response.statusText}`);
