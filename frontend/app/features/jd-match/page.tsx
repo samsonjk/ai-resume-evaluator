@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { toast, Toaster } from 'react-hot-toast';
 
 type Resume = {
