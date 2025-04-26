@@ -45,22 +45,17 @@ export default function JobDescriptionMatchingPage() {
 
     setIsSubmitting(true);
     try {
-      const response = await axios.post(
-        `${process.env.BASE_API_URL}/analyze-resume`,
-        new URLSearchParams({
+      const response = await fetch('/api/resume/analyze', {
+        method: 'POST',
+        body: new URLSearchParams({
           resume_file_name: selectedResume,
-          job_description: jobDescription
+          job_description: jobDescription,
         }),
-        {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Accept: 'application/json'
-          }
-        }
-      );
-      setResponseText(response.data);
+      });
+      const result = await response.json();
+      setResponseText(result);
       toast.success('Analysis completed successfully!');
-      console.log(response.data);
+      console.log(result);
     } catch (error) {
       toast.error('Failed to analyze resume.');
       console.error(error);
