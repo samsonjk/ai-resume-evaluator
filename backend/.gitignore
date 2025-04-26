@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+.Python
+
+# Editor/IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+.env.*
+*.secret
+
+# Pydantic cache
+*.pydantic_cache/
+
+# Docker
+docker-compose.override.yml
+docker-compose*.local.yml
+*.bak
+*.swp
+.dockerignore
+
+# Testing
+htmlcov/
+coverage.xml
+.coverage
+.cache/
+pytest_cache/
+
+# Database
+*.sqlite3
+*.db
+
+# Misc
+*.tmp
+*.temp
+*.log
+
+# FastAPI static or media
+staticfiles/
+mediafiles/
+
+# Other
+*.pem
+*.key
+*.crt
+certs/
