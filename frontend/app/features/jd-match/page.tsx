@@ -46,7 +46,7 @@ export default function JobDescriptionMatchingPage() {
     setIsSubmitting(true);
     try {
       const response = await axios.post(
-        'http://localhost:8000/analyze-resume',
+        '/analyze-resume',
         new URLSearchParams({
           resume_file_name: selectedResume,
           job_description: jobDescription
